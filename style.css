@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Roboto+Condensed&display=swap');
 
 * {
     box-sizing: border-box;
@@ -108,9 +108,13 @@ a:hover {
     flex-basis: content;
 }
 
+h1, h2, .sec_2 h3, button, .logo {
+    font-family: 'Merriweather', serif;
+}
+
 h1 {
     font-size: 50px;
-    font-weight: bolder;
+    font-weight: bold;
     color: #fff;
 }
 
@@ -191,9 +195,13 @@ h1 {
 
 .sec_2 {
     justify-content: flex-end;
-    height: 500px;
+    height: 530px;
     position: relative;
     color: white;
+}
+
+h2 {
+    font-size: 32px;
 }
 
 .sec_2 > div {
@@ -273,7 +281,7 @@ button:hover {
     .header {
         background-image: url("./Utils/Ashok-Chakra.jpg");
         background-position: center;
-        background-attachment: fixed;
+        /* background-attachment: fixed; */
         background-size: cover;
         height: max-content;
         padding-bottom: 15px;
