@@ -5,24 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2a8f1190a7.js" crossorigin="anonymous"></script>
     <title>Landing Page</title>
 </head>
 <body>
 
-    <div class="header">
+    <div class="header" id="home">
 
         <img class="bg-image" src="./Utils/Ashok-Chakra.jpg" alt="Ashok Chakra">
 
         <div class="navbar">
             <div class="logo">
-                <p>Header Logo</p>
+                <i class="fa-solid fa-indian-rupee-sign"></i>
+                <a href="#home">India</a>
             </div>
 
             <div>
                 <ul class="nav">
-                    <li><a href="#" target="_blank">header link one</a></li>
-                    <li><a href="#" target="_blank">header link two</a></li>
-                    <li><a href="#" target="_blank">header link three</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#quote">Quote</a></li>
+                    <li><a href="#sign_up">Sign-up</a></li>
                 </ul>
             </div>
         </div>
@@ -32,7 +34,7 @@
             <div class="hero">
                 <div class="left">
                     <h1>Bharat Darshan</h1>
-                    <p>Indian culture is incredibly diverse and vibrant, with a rich tapestry of traditions, languages, cuisines, and colorful festivals. It's a celebration of unity in diversity, where people honor their unique identities and come together to rejoice in the spirit of togetherness. From the majestic architecture of historical monuments to the rhythmic beats of traditional music and dance, India is a land of endless wonders and cultural treasures. 🇮🇳💫✨</p>
+                    <p>Indian culture is incredibly diverse and vibrant, with a rich tapestry of traditions, languages, cuisines, and colorful festivals. It's a celebration of unity in diversity, where people honor their unique identities and come together to rejoice in the spirit of togetherness. From the majestic architecture of historical monuments to the rhythmic beats of traditional music and dance, India is a land of endless wonders and cultural treasures.</p>
                     <button>Sign up</button>
                 </div>
                 <div class="right">
@@ -45,8 +47,8 @@
 
     </div>
 
-    <section class="sec_1">
-        <h2>Some random information.</h2>
+    <section class="sec_1" id="about">
+        <h2>Indian Specialities</h2>
 
         <div class="package">
 
@@ -76,10 +78,10 @@
 
             <article>
                 <div class="box">
-                    <img src="./Utils/Kaziranga-Rhino.jpg" alt="Rhino" class="box-image">
+                    <img src="./Utils/Food.jpeg" alt="Food" class="box-image">
                 </div>
 
-                <p>Kaziranga National Park is home to the majestic one-horned rhinoceros. These incredible creatures are known for their prehistoric appearance and are a symbol of conservation success in India.</p>
+                <p>Indian cuisine is a delightful blend of flavors, spices, and aromas. From savory curries to aromatic biryanis, each dish is a culinary adventure.</p>
             </article>
 
             <article>
@@ -94,7 +96,8 @@
 
     </section>
 
-    <section class="sec_2">
+    <section class="sec_2" id="quote">
+        <img src="./Utils/Cropped.jpg" alt="Flag" class="bg-image">
 
         <div>
             <p>Our ability to reach unity in diversity will be the beauty and the test of our civilization.”</p>
@@ -103,11 +106,11 @@
 
     </section>
 
-    <section class="sec_3">
-        <div class="blue">
-            <div class="left">
-                <h3>Call to action! It's time!</h3>
-                <p>Sign up for our product by clicking that button over there!</p>
+    <section class="sec_3" id="sign_up">
+        <div class="sign-up">
+            <div>
+                <h3>Want to know more about India?</h3>
+                <p>Sign up to our newsletter by clicking that button over there!</p>
             </div>
             <button>Sign up</button>
         </div>

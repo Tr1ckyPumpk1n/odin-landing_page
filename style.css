@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .header {
@@ -29,28 +39,46 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(208, 163, 55, 0.5);
 }
 
 .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo, i {
     font-size: 28px;
     font-weight: bold;
-    margin: 10px;
-    padding: 10px;
-    color: #f9f8fa;
+    color: #fff;
+    padding-left: 20px;
+}
+
+.logo:hover > * {
+    background-color: transparent;
+    color: rgb(255, 217, 0);
 }
 
 .nav {
     display: flex;
     justify-content: space-around;
-    gap: 10px;
+    gap: 30px;
     padding: 10px;
     list-style-type: none;
 }
 
-.nav a {
+a {
     text-decoration: none;
     color: white;
+    padding: 10px 20px;
+}
+
+a:hover {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #555;
+    color: #fff;
+    border-color: #fff;
 }
 
 .container {
@@ -63,14 +91,14 @@
 .hero {
     width: 80%;
     color: white;
-    border: 5px solid rgba(24, 22, 22, 0.822);
+    border: 5px solid rgba(24, 22, 22, 0.7);
     border-radius: 20px;
 
-    padding: 15px 25px;
-    background-color: rgba(94, 107, 106, 0.65);
+    padding: 15px 40px;
+    background-color: rgba(65, 71, 71, 0.8);
 
     display: flex;
-    gap: 25px;
+    gap: 50px;
 }
 
 .right > img {
@@ -81,14 +109,16 @@
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 50px;
     font-weight: bolder;
-    color: #f9f8fa;
+    color: #fff;
 }
 
 .nav a, .hero p {
-    font-size: 18px;
-    color: #e5e7eb;
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    text-align: justify;
 }
 
 .hero > .left {
@@ -97,16 +127,19 @@ h1 {
     gap: 15px;
     align-items: flex-start;
     justify-content: center;
+    padding: 10px 30px;
 }
 
 .left > button {
     margin-top: 20px;
-    padding: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
 .sec_1 {
     min-height: 500px;
     padding: 30px 0;
+    font-size: 17px;
 
     display: flex;
     flex-direction: column;
@@ -114,21 +147,21 @@ h1 {
     justify-content: space-around;
     text-align: center;
 
-    /* Just for testing */
-    background-color: rgba(208, 163, 55, 0.5);
+    background-color: #333;
+    background-image: linear-gradient(rgba(255, 123, 0, 0.7) 10%, #ddd 35%, #ddd 55%, rgba(0, 255, 0, 0.5) 90%);
 }
 
 .package {
     display: flex;
     flex-wrap: wrap;
     gap: 35px;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-start;
     padding: 20px 50px;
 
 }
 
-article {
+.package article {
     flex: 0 0 200px;
     display: flex;
     flex-direction: column;
@@ -147,48 +180,82 @@ article {
     background-position: center;
     width: 100%;
     height: 100%;
-    border: 5px solid red;
+    border: 1px solid #555;
     border-radius: 20px;
 }
 
 .sec_2, .sec_3 {
-    min-height: 300px;
-
     display: flex;
-    justify-content: center;
     align-items: center;
+}
 
-
-    /* Just for testing */
-    background-color: rgba(189, 60, 124, 0.5);
+.sec_2 {
+    justify-content: flex-end;
+    height: 500px;
+    position: relative;
+    color: white;
 }
 
 .sec_2 > div {
-    width: 50%;
-    min-height: 150px;
+    width: 40%;
+    min-height: 230px;
     padding: 20px 50px;
+    margin-top: -100px;
 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
 
-    font-size: 18px;
-
-    /* Testing */
-    border: 5px solid red;
+    font-size: 28px;
+    font-weight: bolder;
 }
 
 .sec_2 h3 {
-    font-size: 28px;
+    font-size: 38px;
     font-weight: bold;
     align-self: flex-end;
 }
 
 .sec_3 {
+    height: 300px;
+    justify-content: center;
 
-    /* Just for testing */
-    background-color: rgba(57, 167, 57, 0.5);
+    color: white;
+    background: linear-gradient(hsl(41, 95%, 55%) 0.005%, hsl(23.23,100%,30.39%) 10%, rgb(31,9,0) 40%, hsl(300,100%,0.2%) 80%);
+}
+
+.sign-up {
+    width: 60%;
+    padding: 30px 70px;
+    font-size: 28px;
+    font-style: italic;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #33333355;
+    border:5px solid #99999955;
+    border-radius: 20px;
+}
+
+.sign-up > button {
+    font-size: 22px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #555;
+    color: #fff;
+    border:1px solid #fff;
+}
+
+button:hover {
+    background-color: #fff;
+    border: 1px solid #555;
+    color: #555;
 }
 
 .footer {
@@ -196,6 +263,131 @@ article {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #555;
+    background-color: #222;
     color: white;
+}
+
+
+/* Media Query */
+@media screen and (max-width:1110px) {
+    .header {
+        background-image: url("./Utils/Ashok-Chakra.jpg");
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        height: max-content;
+        padding-bottom: 15px;
+    }
+
+    .bg-image {
+        display: none;
+    }
+
+    .logo {
+        padding-left: 0;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+        padding: 0 10px;
+    }
+
+    .left button {
+        align-self: center;
+    }
+
+    .right > img {
+        vertical-align: top;
+        height: 250px;
+        width: 250px;
+    }
+
+    .nav a, .hero p {
+        font-size: 20px;
+        font-weight: 200;
+        color: #fff;
+        text-align: justify;
+    }
+
+    h1 {
+        font-size: 36px;
+        font-weight: bold;
+        color: #fff;
+        margin-top: 10px;
+    }
+
+    button  {
+        font-size: 18px !important;
+        margin-top: 10px !important;
+        padding: 5px 10px !important;
+    }
+
+    .sec_2 {
+        background-image: url("./Utils/India-Gate.jpg");
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+
+        padding: 30px 0;
+        min-height: 300px;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sec_2 > div {
+        width: 100%;
+        padding: 20px 50px;
+        margin-top: 0;
+        min-height: auto;
+
+        align-items: flex-start;
+        justify-content: space-between;
+
+        font-size: 18px;
+        font-weight: bold;
+
+        background-color: rgba(65, 71, 71, 0.6);
+    }
+
+    .sec_3 {
+        height: 250px;
+        padding: 30px 0;
+    }
+
+    .sign-up {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        margin: 5px 10px;
+
+        width: 80%;
+    }
+
+    .sign-up > div > *{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media screen and (max-width: 618px) {
+    .nav {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .left > p {
+        font-size: 18px;
+        text-align: left;
+    }
 }
